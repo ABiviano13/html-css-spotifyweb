@@ -25,6 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    display: relative;
 }
 
 .main-content, .album-content{
@@ -45,7 +46,6 @@ body{
 .main-content .main-header{
     background-color: #000;
     width: 200px;
-    flex-shrink: 0;
 }
 
 /* mediaquery main-header */
@@ -57,6 +57,11 @@ body{
 
 
 /* tolb-player */
+.tolb-player{
+    display: fixed;
+    bottom: 0;
+}
+
 .row{
     display: flex;
     align-items: center;
@@ -70,6 +75,21 @@ body{
 .row-song{
     gap: 10px;
 }
+
+.row-play{
+    flex-direction: column;
+}
+
+.row-play-icon{
+    width: 215px;
+    justify-content: space-around;
+}
+
+.row-player{
+    justify-content: space-between;
+    /* flex-grow: 1; */
+}
+
 
 /* .col{
     border: 2px solid white;
@@ -87,6 +107,24 @@ body{
     background-color: transparent;
 }
 
+.col-play-icon{
+    font-size: 16px;
+}
+
+.col-play-icon-big{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.col-bar{
+    flex-basis: 500px;
+}
+
+/* .col-icon-player{
+    border-top: 7px solid gray;
+    width: 345px;
+} */
+
 .text-white{
     color: white;
 }
@@ -102,6 +140,14 @@ body{
 .text-x-small{
     font-size: 11px;
 }
+
+.w3-grey, .w3-white{
+    width: 60%;
+    height: 7px;
+    border-radius: 10px;
+} 
+
+
 
 /* mediaquery aside */
 
