@@ -21,6 +21,7 @@ a{
 
 /* body */
 body{
+     background-color: #141922;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -31,6 +32,7 @@ body{
 }
 
 .tolb-player{
+    background-color: #282828;
     height: auto;
     flex-shrink: 0;
 }
@@ -41,6 +43,7 @@ body{
 }
 
 .main-content .main-header{
+    background-color: #000;
     width: 200px;
     flex-shrink: 0;
 }
@@ -53,23 +56,58 @@ body{
 }
 
 
-
-
-/* DEBUG */
-.debug .main-content{
-    background-color: blueviolet;
+/* tolb-player */
+.row{
+    display: flex;
+    align-items: center;
 }
 
-.debug .tolb-player{
-    background-color: cornflowerblue;
+.row-tolb-player{
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.debug .main-header{
-    background-color: black;
-    border: 1px solid red;
+.row-song{
+    gap: 10px;
 }
 
-.debug .album-content{
-    background-color: palevioletred;
-    border: 2px solid green;
+/* .col{
+    border: 2px solid white;
+} */
+
+.col-img-tolb-player{
+    width: 44px;
+}
+
+.col-text-img-tolb-player{
+    width: 78px;
+}
+
+.col-icon-tolb-player .col-icon{
+    background-color: transparent;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.text-small{
+    font-size: 14px;
+}
+
+.text-x-small{
+    font-size: 11px;
+}
+
+/* mediaquery aside */
+
+@media screen and (max-width: 639px) {
+    .row-icon{
+        flex-direction: column;
+        gap: 2px;
+    }
 }
