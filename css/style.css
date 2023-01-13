@@ -191,6 +191,10 @@ body{
         gap: 2px;
     }
 
+    .col-command .row-command, .col-command-icon{
+        gap: 7px;
+    }
+
     .col-text-img-tolb-player{
         width: 63px;
     }
