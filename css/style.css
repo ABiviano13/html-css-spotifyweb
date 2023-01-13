@@ -91,8 +91,8 @@ body{
 }
 
 .row-play-icon{
-    width: 215px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
 .row-player{
@@ -112,6 +112,10 @@ body{
     background-color: transparent;
 }
 
+.col-player{
+    width: 100%;
+}
+
 .col-play-icon{
     font-size: 16px;
 }
@@ -121,17 +125,38 @@ body{
     margin: 10px;
 }
 
-.col-bar{
-    /* flex-basis: 30%;
-    display: flex;
-    flex-shrink: 2; */
-    /* position: relative;
-    height: 7px;
-    width: 1rem;
-    border: 7px solid white;
-    border-radius: 15px; */
+.col-command-bar{
+    flex-basis: 50%;
 }
 
+.col-bar{
+    width: 100%;
+}
+
+.col-progress{
+    width: 80%;
+    border: 2.5px solid #5a5a5a;
+    border-radius: 15px;
+}
+
+.col-command{
+    flex-basis: 15%;
+}
+
+.col-command-progress{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+
+}
+
+.progress-song{
+    height: 0;
+    width: 88px;
+    border: 2.5px solid #5a5a5a;
+    border-radius: 15px;
+}
 
 .text-white{
     color: white;
@@ -142,19 +167,41 @@ body{
 }
 
 .text-small{
-    font-size: 14px;
+    font-size: 10px;
 }
 
-.text-x-small{
-    font-size: 11px;
+.text-bold{
+    font-weight: bold;
 }
 
+.icon-small{
+    font-size: 13px;
+}
 
 /* mediaquery aside */
+@media screen and (max-width: 878px){
+    .row-tolb-player{
+        gap: 36px;
+    }
+}
 
 @media screen and (max-width: 639px) {
     .row-icon{
         flex-direction: column;
         gap: 2px;
+    }
+
+    .col-text-img-tolb-player{
+        width: 63px;
+    }
+
+    .col-player{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 552px){
+    .row-tolb-player{
+        gap: 30px;
     }
 }
