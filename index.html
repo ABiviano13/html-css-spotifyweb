@@ -6,14 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b59a747f9a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <main class="content">
 
-        <header class="main-header">
-            
+        <header class="sidebar">
+            <div class="row row-header column">
+                <div class="col col-image-sidebar">
+                    <a href="#">
+                        <img class="logo-big" src="./spotify/img/logo.svg" alt="logo">
+                        <img class="logo-small" src="./spotify/img/logo-small.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="col col-command-sidebar">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img class="img-sidebar" src="./spotify/img/home.svg" alt="">
+                                <span class="text text-gray">
+                                    Home
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="img-sidebar" src="./spotify/img/search.svg" alt="">
+                                <span class="text text-gray">
+                                    Cerca
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="img-sidebar" src="./spotify/img/libreria.svg" alt="">
+                                <span class="text text-gray">
+                                    La tua libreria
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-playlist">
+                    <h5 class="text-white title-uppercase">
+                        Playlist
+                    </h5>
+                    <ul>
+                        <li>
+                            <a class="text-gray text" href="#">
+                                <i class="fa-regular fa-square-plus icon-command-big"></i>
+                                Crea la tua playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray" href="#">
+                                Nome Playlist
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-install">
+                    <a href="#">
+                        <img class="img-sidebar" src="./spotify/img/download.svg" alt="">
+                        <span class="text text-gray">
+                            Installa app
+                        </span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img class="img-sidebar" src="./spotify/img/profile.svg" alt="">
+                        <span class="text text-gray">
+                            John Doe
+                        </span>
+                    </a>
+                </div>
+            </div>
         </header>
 
         <main class="main-content">
@@ -61,7 +163,7 @@
             </div>
             <div class="col col-command-bar">
 
-                <div class="row row-play">
+                <div class="row column">
                     <div class="col col-player">
 
                         <div class="row row-play-icon">
