@@ -43,8 +43,6 @@ body{
     background-color: var(--drak-gray);
     height: auto;
     flex-shrink: 1;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -178,8 +176,7 @@ body{
 }
 
 .icon-small,
- .text-gray,
- .text-white{ 
+.text-white{ 
     font-size: 13px;
 }
 
@@ -200,9 +197,9 @@ body{
         gap: 7px;
     }
 
-    .col-text-img-tolb-player{
+    /* .col-text-img-tolb-player{
         width: 63px;
-    }
+    } */
 
     .col-player{
         width: 100%;
@@ -211,17 +208,67 @@ body{
 
 /* sidebar */
 .row-header{
-    height: 90%;
-    gap: 12px;
+    height: 100%;
 }
 
 .sidebar .logo-big{
     width: 132px;
+    padding: 0 20px;
+    margin-top: 18px;
 }
 
 .sidebar .logo-small{
-    width: 30px;
     display: none;
+    width: 30px;
+    padding: 0 20px;
+    /*  */
+}
+
+.sidebar .col{
+    width: 100%;
+}
+
+.col-command-sidebar{
+    margin: 25px 0;
+}
+
+.col-playlist{
+    padding: 0 20px;
+}
+
+.col-install{
+    margin-top: auto;
+    padding: 10px 20px;
+}
+
+.col-profile{
+    margin-bottom: 4px;
+    padding: 0 20px;
+}
+
+.a-command, .a-install, .a-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.a-command-padding{
+    padding: 0 20px;
+}
+
+.a-install,
+.a-profile{
+    display: flex;
+
+}
+
+.a-profile{
+    padding: 13px 0;
+    border-top: 1px solid white;
+}
+
+.border-green{
+    border-left: 1px solid #adff30;
 }
 
 .icon-command{
@@ -229,22 +276,46 @@ body{
 }
 
 .img-sidebar{
-    width: 38px;
+    width: 20px;
+}
+
+.img-sidebar-medium{
+    width: 27px;
+    background-color: gray;
+    aspect-ratio: 1;
+    border-radius: 999px; 
+}
+
+.img-sidebar-x-small{
+    width: 13px;
 }
 
 .title-uppercase{
     text-transform: uppercase;
 }
 
-.col-install{
-    margin-top: auto;
-}
-.col-command-sidebar{
+.command-sidebar{
     display: flex;
+    flex-direction: column;
     gap: 12px;
 }
 
-/* col-playlist */
+.title-playlist{
+    padding-bottom: 12px;
+} 
+
+.list-playlist{
+    line-height: 20px;
+}
+
+.icon-command-big{
+    font-size: 36px;
+}
+
+.list-playlist{
+    line-height: 25px;
+}
+
 
 
 /* mediaquery sidebar */
@@ -256,6 +327,8 @@ body{
     
     .sidebar .logo-small{
         display: block;
+        adding: 0 px;
+    margin: 4px 9px;
     }
 
     .col-command-sidebar .text{
