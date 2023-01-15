@@ -242,7 +242,7 @@ body{
 }
 
 .col-profile{
-    margin-bottom: 4px;
+    margin-bottom: 7px;
     padding: 0 20px;
 }
 
@@ -263,12 +263,12 @@ body{
 }
 
 .a-profile{
-    padding: 13px 0;
+    padding-top: 13px;
     border-top: 1px solid white;
 }
 
 .border-green{
-    border-left: 1px solid #adff30;
+    border-left: 2px solid #adff30;
 }
 
 .icon-command{
@@ -327,11 +327,44 @@ body{
     
     .sidebar .logo-small{
         display: block;
-        adding: 0 px;
-    margin: 4px 9px;
+        padding: 0;
+        margin: 4px 9px;
     }
 
-    .col-command-sidebar .text{
+    .col-command-sidebar{
+        margin: 16px 0;
+    }
+
+    .col-command-sidebar .text-small,
+    .a-install .text-small, 
+    .a-profile .text-small{
         display: none;
+    }
+
+    .a-command .img-sidebar{
+        width: 23px;
+    }
+
+    .a-command-padding,
+    .col-profile,
+    .col-install{
+        padding: 0 10px;
+    }
+
+    .col-install{
+        margin-left: 20px;
+    }
+
+    .col-playlist{
+        display: none;
+    }
+
+    .sidebar .a-profile, 
+    .border-green{
+        border: none;
+    }
+
+    .img-sidebar-medium{
+        width: 26px;
     }
 }
