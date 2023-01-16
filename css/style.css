@@ -19,6 +19,14 @@ a{
     color: currentColor;
 }
 
+button{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
 :root {
     --drak-gray: #282828;
     --dark-blue: #141922;
@@ -107,6 +115,7 @@ body{
 
 .col-text-img-tolb-player{
     width: 78px;
+    line-height: 10px;
 }
 
 .col-icon-tolb-player .col-icon{
@@ -132,9 +141,11 @@ body{
 
 .col-bar{
     width: 100%;
+    position: relative;
 }
 
 .col-progress{
+    /* position: relative; */
     flex-grow: 1;
     height: 4px;
     background-color: #5a5a5a;
@@ -164,6 +175,7 @@ body{
 }
 
 .progress-song{
+    /* position: relative; */
     height: 4px;
     width: 88px;
     background-color: #5a5a5a;
@@ -422,7 +434,6 @@ body{
 }
 
 .row-command-content .col{
-    /* align-items: center; */
     flex-shrink: 0;
 }
 
@@ -462,6 +473,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.album{
+    position: relative;
 }
 
 .name-album{
@@ -506,8 +521,9 @@ body{
         flex-basis: 23%;
     }
 
-    .img-album{
-        /* width: 140px; */
+    .play-img{
+        top: 30%;
+        left: 30%;
     }
 
 }
@@ -516,4 +532,64 @@ body{
     .col-card-album{
         flex-basis: 48%;
     }
+
 }
+
+/* HOVER */
+.hov-color:hover{
+    color: white;
+}
+
+.col-album-sinister .hov-color:hover{
+    text-decoration: underline;
+}
+
+.button-upgrade:hover{
+    transform: scale(1.1);
+}
+
+.img-album:hover{
+    filter: opacity(0.6);
+}
+
+.play-img:hover{
+    visibility: visible;
+}
+
+.album:hover::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f144";
+    font-size: 60px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: white;
+}
+
+.progress:hover, 
+.progress-indicator:hover{
+    background-color: rgb(3, 255, 3);
+}
+
+.progress-song:hover:after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f111";
+    position: absolute;
+    bottom: 35px;
+    right: 65px;
+
+}
+
+.col-progress:hover:after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f111";
+    position: fixed;
+    right: 60%;
+    bottom: 6px;
+}
+
+
+
