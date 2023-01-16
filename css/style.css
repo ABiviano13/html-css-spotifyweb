@@ -457,21 +457,38 @@ body{
 }
 
 .col-card-album{
-    flex-basis: 25%;
+    flex-basis: 16%;
     max-width: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.img-album{
-    /* width: 177px; */
-}
-
 .name-album{
     text-align: center;
     padding-top: 15px;
     line-height: 15px;
+}
+
+/* section suggestions */
+
+.section-album-suggestions{
+    padding-top: 41px;
+}
+
+.section-album-suggestions > .row-album,
+.section-album-popular-artists > .row-album{
+    justify-content: flex-start;
+}
+
+/* section popular artists */
+.section-album-popular-artists{
+    padding-top: 34px;
+}
+
+.img-album-popular-artists{
+    aspect-ratio: 1;
+    border-radius: 999px; 
 }
 
 /* mediaquery main-content */
@@ -497,6 +514,6 @@ body{
 
 @media screen and (max-width: 639px){
     .col-card-album{
-        flex-basis: calc((100% - 5px) / 3);
+        flex-basis: 48%;
     }
 }
