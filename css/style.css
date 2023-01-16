@@ -123,7 +123,7 @@ body{
 
 .col-play-icon-big{
     font-size: 30px;
-    margin: 10px;
+    padding: 10px;
 }
 
 .col-command-bar{
@@ -135,8 +135,17 @@ body{
 }
 
 .col-progress{
-    width: 85%;
-    border: 2.5px solid #5a5a5a;
+    flex-grow: 1;
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.col-progress .progress{
+    background-color: white;
+    height: 4px;
+    width: 25%;
     border-radius: 15px;
 }
 
@@ -155,9 +164,17 @@ body{
 }
 
 .progress-song{
-    height: 0;
+    height: 4px;
     width: 88px;
-    border: 2.5px solid #5a5a5a;
+    background-color: #5a5a5a;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-indicator{
+    background-color: white;
+    height: 4px;
+    width: 25%;
     border-radius: 15px;
 }
 
@@ -195,13 +212,11 @@ body{
         gap: 2px;
     }
 
-    .col-command .row-command, .col-command-icon{
+    .col-command .row-command,
+    .col-command-icon,
+    .col-command-progress{
         gap: 7px;
     }
-
-    /* .col-text-img-tolb-player{
-        width: 63px;
-    } */
 
     .col-player{
         width: 100%;
@@ -389,21 +404,25 @@ body{
     margin-right: 3.6px
 }
 
+/* container content command */
+
 .container-content{
     display: flex;
     justify-content: center;
 }
 
 .row-command-content{
-    flex-basis: 70%;
-    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
     gap: 18px;
-    margin-top: 14px;
+    padding-top: 14px;
 }
 
 .row-command-content .col{
-    align-items: center;
+    /* align-items: center; */
     flex-shrink: 0;
 }
 
@@ -438,7 +457,7 @@ body{
 }
 
 .col-card-album{
-    flex-basis: calc((100% - 13px) / 6);
+    flex-basis: 25%;
     max-width: max-content;
     display: flex;
     flex-direction: column;
@@ -446,7 +465,7 @@ body{
 }
 
 .img-album{
-    width: 177px;
+    /* width: 177px; */
 }
 
 .name-album{
@@ -467,11 +486,11 @@ body{
     }
 
     .col-card-album{
-        flex-basis: 100%;
+        flex-basis: 23%;
     }
 
     .img-album{
-        width: 140px;
+        /* width: 140px; */
     }
 
 }
