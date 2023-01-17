@@ -145,12 +145,12 @@ body{
 }
 
 .col-progress{
-    /* position: relative; */
+    position: relative;
     flex-grow: 1;
     height: 4px;
     background-color: #5a5a5a;
     border-radius: 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .col-progress .progress{
@@ -175,7 +175,6 @@ body{
 }
 
 .progress-song{
-    /* position: relative; */
     height: 4px;
     width: 88px;
     background-color: #5a5a5a;
@@ -350,6 +349,11 @@ body{
 /* mediaquery sidebar */
 
 @media screen and (max-width: 552px){
+    .col-image-sidebar{
+        display: flex;
+        justify-content: center;
+    }
+
     .sidebar .logo-big{
         display: none;
     }
@@ -357,7 +361,7 @@ body{
     .sidebar .logo-small{
         display: block;
         padding: 0;
-        margin: 4px 9px;
+        margin: 4px;
     }
 
     .col-command-sidebar{
@@ -468,7 +472,7 @@ body{
 }
 
 .col-card-album{
-    flex-basis: 16%;
+    flex-basis: calc(100% / 6);
     max-width: max-content;
     display: flex;
     flex-direction: column;
@@ -560,10 +564,11 @@ body{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f144";
-    font-size: 60px;
+    font-size: 15px;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
 }
 
@@ -572,7 +577,7 @@ body{
     background-color: rgb(3, 255, 3);
 }
 
-.progress-song:hover:after{
+.progress-song::after{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f111";
@@ -586,9 +591,10 @@ body{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f111";
-    position: fixed;
-    right: 60%;
-    bottom: 6px;
+    font-size: 15px;
+    position: absolute;
+    top: -5px;
+    left: 24%;
 }
 
 
