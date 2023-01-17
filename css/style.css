@@ -150,7 +150,6 @@ body{
     height: 4px;
     background-color: #5a5a5a;
     border-radius: 15px;
-    /* overflow: hidden; */
 }
 
 .col-progress .progress{
@@ -259,6 +258,7 @@ body{
     }
 }
 
+
 /* sidebar */
 .row-header{
     height: 100%;
@@ -274,7 +274,6 @@ body{
     display: none;
     width: 30px;
     padding: 0 20px;
-    /*  */
 }
 
 .sidebar .col{
@@ -369,10 +368,7 @@ body{
     line-height: 25px;
 }
 
-
-
 /* mediaquery sidebar */
-
 @media screen and (max-width: 552px){
     .col-image-sidebar{
         display: flex;
@@ -427,6 +423,7 @@ body{
     }
 }
 
+
 /* main-content */
 
 /* container upgrade */
@@ -446,16 +443,10 @@ body{
 }
 
 /* container content command */
-
-.container-content{
-    display: flex;
-    justify-content: center;
-}
-
 .row-command-content{
-    width: 75%;
+    width: 73%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 18px;
@@ -464,12 +455,6 @@ body{
 
 .row-command-content .col{
     flex-shrink: 0;
-}
-
-.row-command-content a{
-    display: flex;
-    align-items: center;
-    flex-shrink: -1;
 }
 
 .border-green-bottom{
@@ -491,7 +476,6 @@ body{
 
 .row-album{
     display: flex;
-    justify-content: space-around;
     gap: 10px;
     padding-top: 31px;
 }
@@ -515,14 +499,8 @@ body{
 }
 
 /* section suggestions */
-
 .section-album-suggestions{
     padding-top: 41px;
-}
-
-.section-album-suggestions > .row-album,
-.section-album-popular-artists > .row-album{
-    justify-content: flex-start;
 }
 
 /* section popular artists */
@@ -535,37 +513,7 @@ body{
     border-radius: 999px; 
 }
 
-/* mediaquery main-content */
-@media screen and (max-width: 878px){
-    .row-command-content{
-        justify-content: space-evenly;
-    }
-
-    .row-album{
-        flex-wrap: wrap;
-        justify-content: start;
-    }
-
-    .col-card-album{
-        flex-basis: 23%;
-    }
-
-    .play-img{
-        top: 30%;
-        left: 30%;
-    }
-
-}
-
-@media screen and (max-width: 639px){
-    .col-card-album{
-        flex-basis: 48%;
-    }
-
-}
-
 /* HOVER */
-
 .button-upgrade:hover{
     transform: scale(1.1);
 }
@@ -585,6 +533,26 @@ body{
     transform: translate(-50%, -50%);
     color: white;
 }
+
+/* mediaquery main-content */
+@media screen and (max-width: 878px){
+    .row-album{
+        flex-wrap: wrap;
+    }
+
+    .col-card-album{
+        flex-basis: calc((100% - 30px) / 4 );
+    }
+
+}
+
+@media screen and (max-width: 639px){
+    .col-card-album{
+        flex-basis: calc((100% - 10px) / 2 );
+    }
+
+}
+
 
 
 
