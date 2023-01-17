@@ -528,11 +528,11 @@ body{
     transform: scale(1.1);
 }
 
-.img-album:hover{
-    filter: opacity(0.5);
+.col-card-album:hover .img-album{
+    filter: opacity(0.3);
 }
 
-.album:hover:before{
+.col-card-album:hover .album::before{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f04b";
