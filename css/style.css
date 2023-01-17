@@ -175,11 +175,11 @@ body{
 }
 
 .progress-song{
+    position: relative;
     height: 4px;
     width: 88px;
     background-color: #5a5a5a;
     border-radius: 15px;
-    overflow: hidden;
 }
 
 .progress-indicator{
@@ -208,6 +208,31 @@ body{
 .icon-small,
 .tolb-player .text-white{ 
     font-size: 13px;
+}
+
+/* HOVER */
+.hov-color:hover{
+    color: white;
+}
+
+.col-album-sinister .hov-color:hover{
+    text-decoration: underline;
+} 
+
+.progress:hover, 
+.progress-indicator:hover{
+    background-color: rgb(3, 255, 3);
+} 
+
+.col-progress:hover:after,
+.progress-song:hover:after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f111";
+    font-size: 15px;
+    position: absolute;
+    top: -5px;
+    left: 24%;
 }
 
 /* mediaquery aside */
@@ -540,13 +565,6 @@ body{
 }
 
 /* HOVER */
-.hov-color:hover{
-    color: white;
-}
-
-.col-album-sinister .hov-color:hover{
-    text-decoration: underline;
-}
 
 .button-upgrade:hover{
     transform: scale(1.1);
@@ -556,15 +574,11 @@ body{
     filter: opacity(0.6);
 }
 
-.play-img:hover{
-    visibility: visible;
-}
-
 .album:hover::before{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f144";
-    font-size: 15px;
+    font-size: 3rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -572,30 +586,8 @@ body{
     color: white;
 }
 
-.progress:hover, 
-.progress-indicator:hover{
-    background-color: rgb(3, 255, 3);
-}
 
-.progress-song::after{
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f111";
-    position: absolute;
-    bottom: 35px;
-    right: 65px;
 
-}
-
-.col-progress:hover:after{
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f111";
-    font-size: 15px;
-    position: absolute;
-    top: -5px;
-    left: 24%;
-}
 
 
 
