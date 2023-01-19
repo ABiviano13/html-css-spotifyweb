@@ -220,8 +220,8 @@ body{
     text-decoration: underline;
 } 
 
-.progress:hover, 
-.progress-indicator:hover{
+.col-progress:hover .progress, 
+.progress-song:hover .progress-indicator{
     background-color: var(--green);
 } 
 
@@ -441,6 +441,9 @@ body{
     background-color: var(--blue-2);
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .button-upgrade{
